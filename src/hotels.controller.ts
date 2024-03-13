@@ -38,7 +38,7 @@ export class HotelsController {
     return this.hotelsService.bookHotel(updateHotelDto.hotelId, updateHotelDto);
   }
 
-  @Get()
+  @Get('hello')
   async getHello() {
     return 'Hello World!';
   }
