@@ -11,7 +11,7 @@ services:
       - nesjs-network
     restart: always
   hotels:
-    container_name: auth-container
+    container_name: hotels-container
     image: kushalgaur123/hotels:latest
     build:
       context: .
