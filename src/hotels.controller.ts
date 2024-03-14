@@ -26,9 +26,10 @@ export class HotelsController {
 
   @Post('createhotel')
   @UsePipes(new ValidationPipe())
-  @UseGuards(JwtAuthGuard)
-  @Roles('admin')
+  //@UseGuards(JwtAuthGuard)
+  // @Roles('admin')
   async createHotel(@Body() data: any) {
+    console.log('------hotel data------', data);
     return this.hotelsService.createHotel(data);
   }
 
