@@ -10,9 +10,9 @@ services:
     networks:
       - nesjs-network
     restart: always
-  hotels:
+  reservations-hotels:
     container_name: hotels-container
-    image: kushalgaur123/hotels:latest
+    image: kushalgaur123/reservations-hotels:latest
     build:
       context: .
       dockerfile: ./Dockerfile
